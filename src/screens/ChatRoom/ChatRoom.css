@@ -1,0 +1,37 @@
+.ChatRoom {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(350px, 500px) minmax(350px, auto);
+    color: white;
+    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
+    box-sizing: border-box;
+}
+.chatroom-main {
+    background-color: #030218;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    border-right: 1px solid white;
+}
+.chatroom-chat {
+    background-color: #030218;
+    height: 100%;
+}
+.fixed-top {
+    position: sticky;
+    overflow: hidden;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* @media only screen and (max-width: 700px) {
+    .ChatRoom {
+        visibility: hidden;
+    }
+} */

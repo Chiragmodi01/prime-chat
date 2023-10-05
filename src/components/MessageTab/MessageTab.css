@@ -1,0 +1,50 @@
+.MessageTab {
+    background-color: #0a0741;
+    cursor: default;
+    padding: 0.6rem;
+    width: max-content;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    position: relative;
+    max-width: 75%;
+    text-align: left;
+}
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3px;
+}
+.message-container .user-name {
+    font-weight: bold;
+    color: turquoise;
+}
+.MessageTab.sent {
+    border-top-right-radius: 0;
+    margin-left: auto;
+}
+.MessageTab.received {
+    border-top-left-radius: 0;
+    margin-right: auto;
+}
+.MessageTab .timestamp {
+    color: lightgrey;
+    font-size: 11px;
+    display: inline-block;
+    transform: translateY(5px);
+    padding-left: 8px;
+    margin-left: auto;
+}
+
+.tail-out-right {
+    position: absolute;
+    top: -1px;
+    right: -6px;
+}
+
+.tail-out-left {
+    position: absolute;
+    top: -1px;
+    left: -6px;
+}

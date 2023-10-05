@@ -1,0 +1,23 @@
+.ChatList {
+    padding: 1rem;
+    position: relative;
+    height: 80%;
+    overflow-y: scroll;
+}
+.newchat-btn-container {
+    position: fixed;
+    bottom: 0.5rem;
+    left: calc(500px - 5rem);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.btn-newchat {
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #171b4b;
+    cursor: pointer;
+}

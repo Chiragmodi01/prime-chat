@@ -1,0 +1,39 @@
+.ChatHeader {
+    background-color: #171b4b;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.ChatHeader .user-img {
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+.header-left {
+    flex: 1;
+    cursor: default;
+}
+.header-right .option {
+    cursor: pointer;
+}

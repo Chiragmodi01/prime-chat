@@ -1,0 +1,39 @@
+.ChatTab {
+    cursor: pointer;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.tab-right {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    justify-content: flex-start;
+    border-bottom: 1px solid gray;
+}
+.ChatTab .user-image {
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+.ChatTab .user-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.ChatTab .last-msg {
+    width: 100%;
+    text-align: left;
+}
+.chat-preview {
+    flex: 1;
+    gap: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
