@@ -15,13 +15,13 @@ function MainProvider({ children }) {
       const [socket, setSocket] = useState(null);
       const [message, setMessage] = useState({});
 
-      // useEffect(() => {
-      //   const newSocket = io(`https://${window.location.hostname}:3000`);
+      useEffect(() => {
+        const newSocket = io(`https://${window.location.hostname}:3000`);
     
-      //   setSocket(newSocket);
+        setSocket(newSocket);
     
-      //   return () => newSocket.close()
-      // }, [setSocket]);
+        return () => newSocket.close()
+      }, [setSocket]);
 
       useEffect(() => {
         const filteredResults = chatsArr.filter((user) => 
