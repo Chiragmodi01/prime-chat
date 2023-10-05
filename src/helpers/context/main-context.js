@@ -16,7 +16,7 @@ function MainProvider({ children }) {
       const [message, setMessage] = useState({});
 
       useEffect(() => {
-        const newSocket = io(`https://${window.location.hostname}:3000`);
+        const newSocket = io(`http://localhost:3000`);
     
         setSocket(newSocket);
     
