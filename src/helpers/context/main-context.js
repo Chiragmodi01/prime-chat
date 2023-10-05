@@ -16,7 +16,7 @@ function MainProvider({ children }) {
       const [message, setMessage] = useState({});
 
       useEffect(() => {
-        const newSocket = io(`http://${window.location.hostname}:3000`);
+        const newSocket = io(`https://master--fascinating-druid-1df4b3.netlify.app/`);
     
         setSocket(newSocket);
     
