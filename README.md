@@ -1,6 +1,26 @@
-# Getting Started with Create React App
+## Prime Chat (chat webapp)
+Tech Stack:
+```
+Frontend: JavaScript, ReactJs, styled-component
+Backend: NodeJs, Express, Socket.io
+```
+Screens : 
+```
+1. Signup
+2. Chat Room (user contacts, messaging section)
+```
+Backend:
+<pre>
+- Static API for Users Data: Custom created in <b>NodeJs and Express</b> <a target="_blank" href='[https://github.com/Chiragmodi01/quizapp-backend](https://github.com/Chiragmodi01/primechat-backend)'>(github repo)</a>
+- Backend server for real-time chat: Created in NodeJs and Express with <b>Socket.io</b> <a target="_blank" href='[https://github.com/Chiragmodi01/primechat-server](https://github.com/Chiragmodi01/primechat-server)'>(github repo)</a>
+</pre>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features : 
+```
+1. Sign-In / Sign-out using Firebase google Authentication
+2. Search filter for User Name
+3. Real-time messaging using polling with Socket.io
+```
 
 ## Available Scripts
 
@@ -26,43 +46,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
