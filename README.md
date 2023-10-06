@@ -11,8 +11,8 @@ Screens :
 ```
 Backend:
 <pre>
-- Static API for Users Data: Custom created in <b>NodeJs and Express</b> <a target="_blank" href='[https://github.com/Chiragmodi01/quizapp-backend](https://github.com/Chiragmodi01/primechat-backend)'>(github repo)</a>
-- Backend server for real-time chat: Created in NodeJs and Express with <b>Socket.io</b> <a target="_blank" href='[https://github.com/Chiragmodi01/primechat-server](https://github.com/Chiragmodi01/primechat-server)'>(github repo)</a>
+- Static API for Users Data: Custom created in <b>NodeJs and Express</b> <a target="_blank" href='https://github.com/Chiragmodi01/quizapp-backend'>(github repo)</a>
+- Backend server for real-time chat: Created in NodeJs and Express with <b>Socket.io</b> <a target="_blank" href='https://github.com/Chiragmodi01/primechat-server'>(github repo)</a>
 </pre>
 
 Features : 
