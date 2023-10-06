@@ -10,8 +10,6 @@ import './ChatInbox.css'
 function ChatInbox({user}) {
     const {selectedChat, socket} = useMain();
 
-    console.log('selectedChat8', selectedChat);
-
   return (
     <div className='ChatInbox'>
       <img src={chatDoodleArt} alt="chat-doodle-art" className='chatDoodleArt-img' />

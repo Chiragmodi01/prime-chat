@@ -44,8 +44,6 @@ function App() {
     }, 2000)
   }, [loading])
 
-  console.log('fuckyou', loading)
-
 	return (
 		<div className="App">
       {

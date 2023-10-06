@@ -25,7 +25,6 @@ function MainProvider({ children }) {
 
       useEffect(() => {
         const filteredResults = chatsArr.filter((user) => {
-        console.log('userx', user)
             return user.userName.toLowerCase().includes(searchVal.toLowerCase())
       })
         setFilteredChatsArr(filteredResults)
@@ -41,7 +40,6 @@ function MainProvider({ children }) {
       }
     }
 
-    console.log('selectedChat', selectedChat)
 
     useEffect(() => {
       fetchData()

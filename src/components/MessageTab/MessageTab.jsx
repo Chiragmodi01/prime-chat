@@ -9,8 +9,6 @@ function MessageTab({user, message}) {
     const timestamp = formatTimestamp(time)
     const datestamp = formatDate(date);
 
-    console.log('message2', message);
-
     //date banner, username and profile
 
   return (

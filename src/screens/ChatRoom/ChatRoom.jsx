@@ -6,8 +6,6 @@ import { useMain } from '../../helpers/context/main-context';
 function ChatRoom({loadingChats, user, setChatsArr, searchVal, setSearchVal, chatsArr, filteredChatsArr, handleSignOut}) {
 
   const {selectedChat, socket} = useMain();
-  console.log('socketsocket', loadingChats)
-  
   return (
     <div className='ChatRoom'>
       {!loadingChats ? <div className="chatroom-main">

@@ -8,7 +8,6 @@ function TypeMessage({socket}) {
     const formSubmitHandler = (e) => {
         e.preventDefault();
         socket.emit('message', inputValue);
-        console.log(inputValue, socket);
         setInputValue('');
     }
 
