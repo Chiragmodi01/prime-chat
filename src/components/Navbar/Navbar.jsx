@@ -1,7 +1,9 @@
 import React from 'react'
+import {DotsVerticalRounded, Settings, LogOut} from '../../utils/styledIcons';
+
 import './Navbar.css';
 
-function Navbar({user}) {
+function Navbar({user, handleSignOut}) {
   const {displayName, photoURL} = user;
 
   return (
@@ -11,9 +13,13 @@ function Navbar({user}) {
             <span className="user-name">{displayName}</span>
         </div>
         <div className="nav-right">
-            <span className="option option-settings">S</span>
-            <span className="option option-theme">T</span>
-            <span className="option option-menu">D</span>
+            <span onClick={handleSignOut} className="option option-logout" title='Logout'>
+              <LogOut size={23} />
+            </span>
+            <span className="option option-settings" title='Settings'>
+              <Settings size={23} />
+            </span>
+            <span className="option option-menu" title='Menu'><DotsVerticalRounded size={23} /></span>
         </div>
     </div>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import './ChatHeader.css';
+import {Search, DotsVerticalRounded} from '../../utils/styledIcons';
 
 function ChatHeader({selectedChat}) {
   const {userName='', image=''} = selectedChat;
@@ -11,8 +12,12 @@ function ChatHeader({selectedChat}) {
             <span className="user-name">{userName}</span>
         </div>
         <div className="header-right">
-            <span className="option option-settings">S</span>
-            <span className="option option-menu">D</span>
+            <span className="option option-settings">
+              <Search size={19} />
+            </span>
+            <span className="option option-menu">
+              <DotsVerticalRounded size={23} />
+            </span>
         </div>
     </div>
   )

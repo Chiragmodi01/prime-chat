@@ -7,7 +7,7 @@ import 'firebase/compat/auth';
 
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useMain } from "./helpers/context/main-context";
 
 firebase.initializeApp({
@@ -30,10 +30,15 @@ const signInWithGoogle = () => {
 function App() {
   const[user, loading, error] = useAuthState(auth);
   const {searchVal, setSearchVal, chatsArr, setChatsArr, filteredChatsArr, setFilteredChatsArr} = useMain();
+  
+  const handleSignOut = () => {
+    const confirmResp = window.confirm("Do you want to log out of the app?");
+    return confirmResp && auth.signOut()
+  }
 
 	return (
 		<div className="App">
-      {user ? <ChatRoom  user={user} setChatsArr={setChatsArr} searchVal={searchVal} setSearchVal={setSearchVal} filteredChatsArr={filteredChatsArr} chatsArr={chatsArr} /> : <SignIn signInWithGoogle={signInWithGoogle}/>}
+      {user ? <ChatRoom handleSignOut={handleSignOut} user={user} setChatsArr={setChatsArr} searchVal={searchVal} setSearchVal={setSearchVal} filteredChatsArr={filteredChatsArr} chatsArr={chatsArr} /> : <SignIn signInWithGoogle={signInWithGoogle}/>}
 		</div>
 	);
 }

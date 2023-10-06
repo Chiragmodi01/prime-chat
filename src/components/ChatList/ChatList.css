@@ -17,6 +17,8 @@
     border: none;
     height: 50px;
     width: 50px;
+    box-shadow: 0 0 16px 3px rgba(248, 244, 244, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: white;
     border-radius: 100%;
     background-color: #171b4b;
     cursor: pointer;

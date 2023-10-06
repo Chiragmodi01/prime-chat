@@ -1,0 +1,41 @@
+.SignIn {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(350px, 500px) minmax(350px, auto);
+    color: white;
+    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
+    box-sizing: border-box;
+    background-color: #030218;
+}
+.login-logo {
+    transform: scaleX(-1);
+    margin-left: 7px;
+}
+.signin-main-container {
+    border-right: 1px solid white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo-google {
+    opacity: 50%;
+}
+.btn-signin {
+    z-index: 99;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: #0097ff;
+    width: max-content;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5rem;
+    margin: 2rem auto;
+    cursor: pointer;
+    box-shadow: 0 0 16px 3px rgba(248, 244, 244, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

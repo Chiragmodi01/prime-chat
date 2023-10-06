@@ -1,6 +1,7 @@
 import React from 'react'
 import { ChatTab } from '../ChatTab/ChatTab'
 import { useMain } from '../../helpers/context/main-context'
+import {UserAdd} from '../../utils/styledIcons';
 
 import './ChatList.css'
 
@@ -26,7 +27,9 @@ function ChatList({setChatsArr, chatsArr, filteredChatsArr}) {
             })
         }
         <div className="newchat-btn-container">
-          <button className='btn-newchat' onClick={handleCreateNewchat}>+</button>
+          <button className='btn-newchat' onClick={handleCreateNewchat}>
+            <UserAdd size={23}  />
+          </button>
         </div>
     </div>
   )

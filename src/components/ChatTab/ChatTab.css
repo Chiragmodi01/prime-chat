@@ -27,6 +27,8 @@
 }
 .ChatTab .last-msg {
     width: 100%;
+    font-size: 0.8rem;
+    color: lightgrey;
     text-align: left;
 }
 .chat-preview {

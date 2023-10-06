@@ -3,20 +3,22 @@ import { ChatHeader } from '../ChatHeader/ChatHeader'
 import { useMain } from '../../helpers/context/main-context'
 import { TypeMessage } from '../TypeMessage/TypeMessage'
 import { MainChat } from '../MainChat/MainChat'
+import chatDoodleArt from '../../assets/chatbg-doodle-art.png'
 
 import './ChatInbox.css'
 
 function ChatInbox({user}) {
     const {selectedChat, socket} = useMain();
 
-    console.log('socket', socket);
+    console.log('selectedChat8', selectedChat);
 
   return (
     <div className='ChatInbox'>
+      <img src={chatDoodleArt} alt="chat-doodle-art" className='chatDoodleArt-img' />
         { socket ? (
             <>
                 <ChatHeader selectedChat={selectedChat} />
-                <MainChat user={user} socket={socket}/>
+                <MainChat selectedChat={selectedChat} user={user} socket={socket}/>
                 <TypeMessage socket={socket} />
             </>
             ):

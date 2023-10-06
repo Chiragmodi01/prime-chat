@@ -2,7 +2,7 @@ import React from 'react'
 import './ChatTab.css'
 
 function ChatTab({chat}) {
-  const {image, userName, id} = chat;
+  const {image, userName, id, status} = chat;
 
   return (
     <div className='ChatTab'>
@@ -16,7 +16,7 @@ function ChatTab({chat}) {
             <span className="user-name">{userName}
             <div className="time-stamp">7:29 PM</div>
             </span>
-            <span className="last-msg">this is last message</span>
+            <span className="last-msg">{status}</span>
         </div>
         </div>
     </div>

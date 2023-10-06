@@ -24,9 +24,10 @@ function MainProvider({ children }) {
       }, [setSocket]);
 
       useEffect(() => {
-        const filteredResults = chatsArr.filter((user) => 
-            user.name.toLowerCase().includes(searchVal.toLowerCase())
-        )
+        const filteredResults = chatsArr.filter((user) => {
+        console.log('userx', user)
+            return user.userName.toLowerCase().includes(searchVal.toLowerCase())
+      })
         setFilteredChatsArr(filteredResults)
     }, [searchVal])
 

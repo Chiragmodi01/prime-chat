@@ -4,8 +4,8 @@ import { formatTimestamp } from '../../utils/formatTime'
 import { formatDate } from '../../utils/formatDate'
 
 function MessageTab({user, message}) {
-    const {value, time, date} = message || {}
-    const status = 'sent'
+    const {value, time, date, status} = message || {}
+    const msgStatus = 'received'
     const timestamp = formatTimestamp(time)
     const datestamp = formatDate(date);
 
@@ -14,7 +14,7 @@ function MessageTab({user, message}) {
     //date banner, username and profile
 
   return (
-    <div title={`Sent at ${new Date(message.time).toLocaleTimeString()} on ${datestamp}`}  className={`MessageTab ${status}`}>
+    <div title={`Sent at ${new Date(message.time).toLocaleTimeString()} on ${datestamp}`}  className={`MessageTab ${msgStatus}`}>
           <div className="message-container">
         <span className="user-name">{user.displayName}</span>
         <span className="message">
@@ -23,7 +23,7 @@ function MessageTab({user, message}) {
     </span>
         </div>
         {
-            status === 'sent' ? 
+            msgStatus === 'sent' ? 
             <span className="tail-out-right">
             <svg viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" class="" version="1.1" x="0px" y="0px" enableBackground="new 0 0 8 13">
                 <path opacity="0.13" d="M5.188,1H0v11.193l6.467-8.625 C7.526,2.156,6.958,1,5.188,1z"></path>
