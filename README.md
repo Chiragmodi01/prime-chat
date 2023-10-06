@@ -1,7 +1,7 @@
 ## Prime Chat (chat webapp)
 Tech Stack:
 ```
-Frontend: JavaScript, ReactJs, styled-component
+Frontend: JavaScript, ReactJs, styled-component, Firebase
 Backend: NodeJs, Express, Socket.io
 ```
 Screens : 
