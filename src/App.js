@@ -9,6 +9,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { useEffect, useState } from "react";
 import { useMain } from "./helpers/context/main-context";
+import { LoadingAnimation } from "./components";
 
 firebase.initializeApp({
   apiKey: "AIzaSyCa1ujh5UzuQVslesY3LIQe25rIWorAWwI",
@@ -29,6 +30,7 @@ const signInWithGoogle = () => {
 
 function App() {
   const[user, loading, error] = useAuthState(auth);
+  const [loadingChats, setLoadingChats] = useState(true);
   const {searchVal, setSearchVal, chatsArr, setChatsArr, filteredChatsArr, setFilteredChatsArr} = useMain();
   
   const handleSignOut = () => {
@@ -36,9 +38,20 @@ function App() {
     return confirmResp && auth.signOut()
   }
 
+  useEffect(() => {
+     setTimeout(() => {
+      return loading && setLoadingChats(false)
+    }, 2000)
+  }, [loading])
+
+  console.log('fuckyou', loading)
+
 	return (
 		<div className="App">
-      {user ? <ChatRoom handleSignOut={handleSignOut} user={user} setChatsArr={setChatsArr} searchVal={searchVal} setSearchVal={setSearchVal} filteredChatsArr={filteredChatsArr} chatsArr={chatsArr} /> : <SignIn signInWithGoogle={signInWithGoogle}/>}
+      {
+           loadingChats ? <LoadingAnimation /> :
+      (user ? <ChatRoom handleSignOut={handleSignOut} user={user} setChatsArr={setChatsArr} searchVal={searchVal} setSearchVal={setSearchVal} filteredChatsArr={filteredChatsArr} chatsArr={chatsArr} /> : <SignIn signInWithGoogle={signInWithGoogle}/>)
+      }
 		</div>
 	);
 }

@@ -8,3 +8,4 @@ export {TypeMessage} from './TypeMessage/TypeMessage';
 export {MainChat} from './MainChat/MainChat'
 export {MessageTab} from './MessageTab/MessageTab'
 export {InboxPlaceholder} from './InboxPlaceholder/InboxPlaceholder'
+export {LoadingAnimation} from './LoadingAnimation/LoadingAnimation'

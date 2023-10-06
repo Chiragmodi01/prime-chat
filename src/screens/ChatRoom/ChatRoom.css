@@ -1,5 +1,6 @@
 .ChatRoom {
     position: relative;
+    background-color: var(--primary-color);
     display: grid;
     grid-template-columns: minmax(350px, 500px) minmax(350px, auto);
     color: white;
@@ -9,7 +10,7 @@
     box-sizing: border-box;
 }
 .chatroom-main {
-    background-color: #030218;
+    background-color: var(--primary-color);
     height: 100vh;
     min-height: 100vh;
     max-height: 100vh;
@@ -17,7 +18,7 @@
     border-right: 1px solid white;
 }
 .chatroom-chat {
-    background-color: #030218;
+    background-color: var(--primary-color);
     height: 100%;
 }
 .fixed-top {

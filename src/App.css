@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 
+:root {
+  --primary-color: #030218;
+  --secondary-color: #171b4b;
+  --accent-color: #0097ff;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,11 +21,11 @@ input {
 }
  
 ::-webkit-scrollbar-track {
-  background-color: #33397aa0;
+  background-color: transparent;
 }
  
 ::-webkit-scrollbar-thumb {
-  background-color: #171b4b;
+  background-color: var(--secondary-color);
 }
 .App {
   text-align: center;

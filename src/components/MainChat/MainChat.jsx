@@ -13,7 +13,6 @@ function MainChat({selectedChat, userChats, user, socket}) {
     useEffect(() => {
         const messageListener = (message) => {
             setMessages((prevMessages) => {
-                console.log('gun', prevMessages);
                 const newMessage = {...prevMessages};
                 newMessage[message.id] = message;
                 return newMessage
@@ -45,8 +44,6 @@ console.log('faltu', selectedChat);
 
 useEffect(() => {
     const updatedUsers = Object.values(chatsArr).map(userData => {
-        
-        
         if (userData.id === selectedChat.id) {
             console.log('userData2', userData, selectedChat);
             console.log("userdata",userData, selectedChat.id )

@@ -8,7 +8,7 @@
     height: 100vh;
     max-height: 100vh;
     box-sizing: border-box;
-    background-color: #030218;
+    background-color: var(--primary-color);
 }
 .login-logo {
     transform: scaleX(-1);
@@ -30,7 +30,7 @@
     color: white;
     outline: none;
     border: none;
-    background-color: #0097ff;
+    background-color: var(--accent-color);
     width: max-content;
     padding: 0.7rem 1.5rem;
     font-size: 1rem;
@@ -38,4 +38,7 @@
     margin: 2rem auto;
     cursor: pointer;
     box-shadow: 0 0 16px 3px rgba(248, 244, 244, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.btn-signin:hover {
+    opacity: 70%;
 }
