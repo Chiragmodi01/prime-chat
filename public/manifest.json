@@ -3,17 +3,17 @@
   "name": "instant messaging chat app by chirag",
   "icons": [
     {
-      "src": "/src/assets/favicon.png",
+      "src": "/assets/favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "/src/assets/brandBanner.png",
+      "src": "/assets/brandBanner.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/src/assets/brandBanner.png",
+      "src": "/assets/brandBanner.png",
       "type": "image/png",
       "sizes": "512x512"
     }

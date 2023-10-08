@@ -1,5 +1,5 @@
 import React from 'react'
-import brandBanner from '../../assets/brandBanner.png' 
+import brandBanner from '../../../assets/brandBanner.png' 
 import {LockOpenAlt} from '../../utils/styledIcons';
 
 import './InboxPlaceholder.css';

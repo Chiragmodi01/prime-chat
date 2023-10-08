@@ -3,7 +3,7 @@ import { ChatHeader } from '../ChatHeader/ChatHeader'
 import { useMain } from '../../helpers/context/main-context'
 import { TypeMessage } from '../TypeMessage/TypeMessage'
 import { MainChat } from '../MainChat/MainChat'
-import chatDoodleArt from '../../assets/chatbg-doodle-art.png'
+import chatDoodleArt from '../../../assets/chatbg-doodle-art.png';
 
 import './ChatInbox.css'
 
