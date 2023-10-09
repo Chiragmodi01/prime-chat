@@ -16,7 +16,7 @@ function MainProvider({ children }) {
       const [message, setMessage] = useState({});
 
       useEffect(() => {
-        const newSocket = io(`http://localhost:3000`);
+        const newSocket = io(`https://primechat-server.onrender.com`);
     
         setSocket(newSocket);
     
