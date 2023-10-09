@@ -1,4 +1,7 @@
-## Prime Chat (chat webapp)
+# <img src="public/assets/favicon.png" width="50" height="50" />  [PrimeChat](https://primechat-cm.netlify.app/)
+_Experience lightning-fast communication  and enjoy instant messaging with our innovative chat app!_
+</br>
+</br>
 Tech Stack:
 ```
 Frontend: JavaScript, ReactJs, styled-component, Firebase
@@ -6,7 +9,7 @@ Backend: NodeJs, Express, Socket.io
 ```
 Screens : 
 ```
-1. Signup
+1. Signup (google authentication)
 2. Chat Room (user contacts, messaging section)
 ```
 Backend:
@@ -17,10 +20,18 @@ Backend:
 
 Features : 
 ```
-1. Sign-In / Sign-out using Firebase google Authentication
+1. Sign-In / Sign-out (using Firebase google Authentication)
 2. Search filter for User Name
-3. Real-time messaging using polling with Socket.io
+3. Real-time messaging (using polling with Socket.io)
 ```
+
+## User Interface :
+
+<img width="750" alt="image" src="https://github.com/Chiragmodi01/prime-chat/assets/75688193/4a55ef9f-4a29-4c33-abe9-6171f8c84fa8">
+
+
+</br>
+</br>
 
 ## Available Scripts
 
