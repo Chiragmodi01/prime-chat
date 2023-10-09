@@ -5,7 +5,8 @@ import { formatDate } from '../../utils/formatDate'
 
 function MessageTab({user, message}) {
     const {value, time, date, status} = message || {}
-    const msgStatus = 'received'
+    console.log(user)
+    const msgStatus = message.user.name === user.displayName ? 'received' : 'sent'
     const timestamp = formatTimestamp(time)
     const datestamp = formatDate(date);
 
