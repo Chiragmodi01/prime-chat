@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './TypeMessage.css';
 import {Add, EmojiLaughing, Mic} from '../../utils/styledIcons';
 
-function TypeMessage({socket}) {
+function TypeMessage({user, socket}) {
     const [inputValue, setInputValue] = useState('');
 
     const formSubmitHandler = (e) => {

@@ -31,12 +31,16 @@ const signInWithGoogle = () => {
 function App() {
   const[user, loading, error] = useAuthState(auth);
   const [loadingChats, setLoadingChats] = useState(true);
-  const {searchVal, setSearchVal, chatsArr, setChatsArr, filteredChatsArr, setFilteredChatsArr} = useMain();
+  const {socket, searchVal, setSearchVal, chatsArr, setChatsArr, filteredChatsArr, setFilteredChatsArr} = useMain();
   
   const handleSignOut = () => {
     const confirmResp = window.confirm("Do you want to log out of the app?");
     return confirmResp && auth.signOut()
   }
+
+  useEffect(() => {
+    socket && socket.connected && socket.emit('setUser', user);
+  }, [socket])
 
   useEffect(() => {
      setTimeout(() => {

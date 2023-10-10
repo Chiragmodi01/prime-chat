@@ -17,7 +17,7 @@ function ChatInbox({user}) {
             <>
                 <ChatHeader selectedChat={selectedChat} />
                 <MainChat selectedChat={selectedChat} user={user} socket={socket}/>
-                <TypeMessage socket={socket} />
+                <TypeMessage user={user} socket={socket} />
             </>
             ):
             <div>Socket Not Connected</div>
